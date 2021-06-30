@@ -3,17 +3,43 @@ body{
 }
 
 #pg-heading{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Press Start 2P', cursive;
     height:200px;
     text-align:center;
-    font-family: 'Big Shoulders Stencil Display', cursive;
-    font-size:50px;
-    color:rgb(228, 218, 76)
+    /*font-family: 'Big Shoulders Stencil Display', cursive;*/
+    font-size:30px;
+    color:white;
+    display:flex;
+    justify-content: center;
+
+}
+#logo{
+     background:url(/assets/images/pixeldice.png);
+     height:200px;
+     width:200px;
+     margin-right:100px;
+     /*position: absolute;
+     right: 150px;
+     top: 25px;*/
+     
+     
 
 }
 
+#logo1{
+    background:url(/assets/images/pixeldice.png);
+    height:200px;
+    width:200px;
+    margin-left:100px;
+    /*position: absolute;
+    left: 150px;
+    top: 25px;*/
+
+}
+
+
 #image-container{
-    border: 0.5px solid gray;
+    
     margin: 0 auto;
     width:80%;
     position:relative;
@@ -21,20 +47,20 @@ body{
 }
 
 #image1{
-    border: 0.5px solid gray;
-    height:350px;
-    width:250px;
-    position:absolute;
+    
+    height:700px;
+    width:700px;
+    margin: 0 auto;
     right:50px;
     top:250px;
-    background:url(/assets/images/newgame.png) center center no-repeat;
+    background:url(/assets/images/pixeltvresize.png) center center no-repeat;
 
 }
 
 #image2{
     border: 0.5px solid gray;
-    height:150px;
-    width:150px;
+    height:350px;
+    width:250px;
     position:absolute;
     left:150px;
     top:50px;
@@ -70,4 +96,14 @@ body{
     right: 10%;
     
 
+}
+
+#quiz-container{
+    background:url(/assets/images/pixelframe_900x700.png) center center no-repeat;
+    display:block;
+    height:1000px;
+}
+
+#reset-btn{
+    text-align:center;
 }
