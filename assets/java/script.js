@@ -1,18 +1,20 @@
-//function startGame();
+let startButton= document.getElementById("start-quiz")    
+
+startButton.addEventListener('click', buildQuiz)
+ function buildQuiz(){
+   console.log("Start Game!")
+      
+ 
+      
+   }
+
+ function nextQuestion(){
 
 
+ }
 
 
-function showQuestions(){
-  let quizQuestions = getElementById("quiz-questions")
-  quizQuestions.innerhtml = 
-      (`<div>
-          hello!
-      </div>`)
-  ;
+ function selectAnswer(){
 
-}
 
-//function getAnswers();
-
-function showQuestions();
+ }

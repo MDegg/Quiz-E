@@ -1,5 +1,7 @@
 body{
     background-color: black;
+    color:white;
+    font-family: 'Press Start 2P', cursive;
 }
 
 #pg-heading{
@@ -99,11 +101,56 @@ body{
 }
 
 #quiz-container{
-    background:url(/assets/images/pixelframe_900x700.png) center center no-repeat;
+    background:url(/assets/images/pixelframe1100x900.png) center center no-repeat;
     display:block;
     height:1000px;
+   /* text-align:center;
+    position:relative;*/
+    display: flex;
+    
+    justify-content: center;
+    align-items: center
+}
+
+#quiz{
+    height:500px;
+    width: 700px;
+    border:solid 1px white;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+    
+}
+
+.btn{
+    color:white;
+    font-family: 'Press Start 2P', cursive;
+    background:black;
+    border:0.5px solid gray;
+    padding:10px;
+    border-radius:5px;
+    margin:10px
+}
+
+.btn:hover{
+    border:1.5px solid white;
+}
+
+.btn-grid{
+    display:grid;
+    grid-template-columns: repeat(2,auto);
+    gap:10px;
 }
 
 #reset-btn{
     text-align:center;
+}
+
+#questions{
+    color:aqua;
+}
+
+.hide{
+    display:none;
 }

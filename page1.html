@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src = "/assets/java/script.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@600&display=swap');        
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap');
+     </style>
     <title>Quiz-E</title>
 </head>
 <body>
@@ -13,24 +19,33 @@
         <h1>Quiz-E Retro Games Quiz</h1>
         <div id="logo1"></div>
     </div>
-    <div id ="quiz-container">
-        <div id= "quiz-questions">
 
+    <div id ="quiz-container" >
+        <div id="quiz" class="hide">
+            <div id= "quiz-questions" >
+            <div id="answer-btn" class="btn-grid, hide">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
+                <div id= "next-buttons">
+                    <button id = "start-quiz" class ="btn">Start Quiz</button>
+                    <button id = "prev-question" class ="btn, hide">Previous Question</button>
+                    <button id = "submit" class ="btn, hide">Submit</button>
+                </div>
+            
         </div>
-        <div id= "buttons">
-        <button id = "next-question"></button>
-        <button id = "prev-question"></button>
-        <button id = "submit"></button>
-        </div>
-        <div id="result"></div>
-    </div>    
-         <div id = "reset-btn">
+    </div>
+        <div id="results"></div>    
+    
+         <!--<div id = "reset-btn">
             <a  href = "page1.html"><img src="/assets/images/resetbtnresize.png" alt = "Reset Button"></a>
             
          </div id = "home-btn"> 
          <div>
 
-         </div>
+         </div>-->
 
     
 
@@ -40,4 +55,6 @@
 
 
 </body>
+
+
 </html>
