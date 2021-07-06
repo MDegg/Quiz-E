@@ -5,6 +5,7 @@ body{
 }
 
 #pg-heading{
+    margin-top:50px;
     font-family: 'Press Start 2P', cursive;
     height:200px;
     text-align:center;
@@ -161,6 +162,37 @@ body{
     margin:10px
 }
 
+#submit {
+    color:orange;
+    font-family: 'Press Start 2P', cursive;
+    background:black;
+    border:0.5px solid gray;
+    padding:10px;
+    border-radius:5px;
+    margin:10px;
+    font-size:40px;
+
+}
+
+#submit:hover {
+    border-color:orange;
+}
+#next-buttons{
+    justify-content: center;
+    display:flex;
+    align-items: center;
+}
+#next{
+    color:white;
+    font-family: 'Press Start 2P', cursive;
+    font-size:25px;
+    background:black;
+    border:0.5px solid gray;
+    padding:10px;
+    border-radius:5px;
+    margin:10px
+}
+
 .btn:hover{
     border:1.5px solid white;
 }
@@ -185,4 +217,12 @@ body{
 
 #start-quiz{
     font-size: 30px;
+}
+
+.correct{
+    color:green;
+}
+
+.incorrect{
+    color:red;
 }
