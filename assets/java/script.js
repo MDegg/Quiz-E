@@ -7,7 +7,7 @@ let quizContainer = document.getElementById('quiz')
 let submitButton = document.getElementById('submit')
 let quizResults = document.getElementById('form-result')
 let countRightAnswers = 0;
-let countResult = document.getElementsByClassName('correct-answers')
+let questionResult = document.getElementById('answer-counter')
 
 let answerButtons = document.getElementById('answer-btn')
 
@@ -86,6 +86,8 @@ if(shuffleQuestions.length > currentQuestionIndex + 1){
   nextButton.classList.remove('hide')
 } else {
   submitButton.classList.remove('hide');
+  answerButtons.classList.add('hide');
+  questionElement.classList.add('hide');
   
 }
 
@@ -115,11 +117,14 @@ submitButton.addEventListener('click', showResults)
 
 function showResults(){
 
+//let countResult = getElementById('correct-answers')
 //countResult.innerHTML = countRightAnswers;
-countResult.classList.remove('hide');
+questionResult.classList.remove('hide');
+questionResult.innerHTML = (`You Answered ${countRightAnswers} out of 10 Answers Correct`)
+submitButton.classList.add('hide');
 console.log('complete')
 console.log(countRightAnswers);
-resetState()
+//resetState()
 }
   
 

@@ -7,7 +7,7 @@ body{
 #pg-heading{
     margin-top:50px;
     font-family: 'Press Start 2P', cursive;
-    height:200px;
+    /*height:200px;*/
     text-align:center;
     /*font-family: 'Big Shoulders Stencil Display', cursive;*/
     font-size:30px;
@@ -134,6 +134,10 @@ body{
     
 }
 
+#answer-counter{
+    font-size:50px;
+}
+
 @keyframes typing {
     from { 
         width: 0% 
@@ -215,6 +219,10 @@ body{
     display:none;
 }
 
+#hide{
+    display:none;
+}
+
 #start-quiz{
     font-size: 30px;
 }
@@ -226,3 +234,96 @@ body{
 .incorrect{
     color:red;
 }
+
+
+@media only screen and (max-width: 800px) {
+    body{
+        background-color: black;
+        color:white;
+        font-family: 'Press Start 2P', cursive;
+    }
+    
+    #pg-heading{
+        margin-top:50px;
+        font-family: 'Press Start 2P', cursive;
+        height:200px;
+        text-align:center;
+        /*font-family: 'Big Shoulders Stencil Display', cursive;*/
+        font-size:30px;
+        color:white;
+        display:flex;
+        justify-content: center;
+    
+    }
+    #logo{
+         display:none;
+         
+         
+    
+    }
+    
+    #logo1{
+       display:none;
+    
+    }
+    
+    
+    #image-container{
+        
+        margin: 0 auto;
+        width:80%;
+        position:relative;
+        height:1000px;
+    }
+    
+    #image1{
+        height:700px;
+        width:700px;
+        margin: 0 auto;
+        right:50px;
+        top:250px;
+        background:url(/assets/images/pixeltvresize.png) center center no-repeat;
+    
+    }
+    
+    #image2{
+    border: 0.5px solid gray;
+    height:350px;
+    width:250px;
+    position:absolute;
+    left:150px;
+    top:50px;
+    }
+    
+    #image3{
+        border: 0.5px solid gray;
+        height:150px;
+        width:150px;
+        position:absolute;
+        left:200px;
+        top:500px;
+    }
+    
+    #start-btn{
+        
+        /*height:50px;
+        width:100px;*/
+        position: absolute;
+        
+        bottom: 150px;
+        left: 10%;
+        
+    }
+    
+    #rules-btn{
+        
+       /* max-height:150px;
+        max-width:300px;*/
+        position: absolute;
+        /*width: 100px;*/
+        bottom: 150px;
+        right: 10%;
+        
+    
+    }
+  }
