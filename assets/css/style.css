@@ -20,7 +20,8 @@ body{
      background:url(/assets/images/pixeldice.png);
      height:200px;
      width:200px;
-     margin-right:100px;
+     margin-right:30px;
+     cursor: pointer;
      /*position: absolute;
      right: 150px;
      top: 25px;*/
@@ -33,7 +34,8 @@ body{
     background:url(/assets/images/pixeldice.png);
     height:200px;
     width:200px;
-    margin-left:100px;
+    margin-left:30px;
+    cursor: pointer;
     /*position: absolute;
     left: 150px;
     top: 25px;*/
@@ -79,7 +81,7 @@ body{
 }
 
 #start-btn{
-    
+    cursor: pointer;
     /*height:50px;
     width:100px;*/
     position: absolute;
@@ -90,7 +92,7 @@ body{
 }
 
 #rules-btn{
-    
+    cursor: pointer;
    /* max-height:150px;
     max-width:300px;*/
     position: absolute;
@@ -110,7 +112,7 @@ body{
     display: flex;
     
     justify-content: center;
-    align-items: center
+    align-items: center;
 }
 
 #quiz{
@@ -129,13 +131,15 @@ body{
   	letter-spacing: 1px;
  	animation: typing 3s steps(30, end), blink .75s step-end infinite;
     white-space:initial;
-    font-weight: 700;
+    
     border-right: 4px solid orange;
     
 }
 
 #answer-counter{
-    font-size:50px;
+    font-size:30px;
+    color:orange;
+    margin-bottom: 25%;
 }
 
 @keyframes typing {
@@ -180,6 +184,7 @@ body{
 
 #submit:hover {
     border-color:orange;
+    cursor: pointer;
 }
 #next-buttons{
     justify-content: center;
@@ -197,8 +202,13 @@ body{
     margin:10px
 }
 
+#next:hover{
+    cursor: pointer;
+}
+
 .btn:hover{
     border:1.5px solid white;
+    cursor: pointer;
 }
 
 .btn-grid{
@@ -209,6 +219,13 @@ body{
 
 #reset-btn{
     text-align:center;
+    
+}
+
+
+
+#reset-btn-2{
+    display:none;
 }
 
 #questions{
@@ -236,37 +253,90 @@ body{
 }
 
 
-@media only screen and (max-width: 800px) {
-    body{
-        background-color: black;
-        color:white;
-        font-family: 'Press Start 2P', cursive;
-    }
+#modal{
+    display:none;
+    background-color:rgb(153, 152, 152);
+    /*background:url(/assets/images/pixelframe1100x900.png) center center no-repeat;*/
+    color:black;
+    width:70%;
+    height:70%;
+    position:fixed;
+    top:15%;
+    left:15%;
+    z-index:1;
+    padding:30px;
+    font-size:25px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    background-color:gray;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    height:40px;
+    width:40px;
+
+  }
+
+  .modal-close:hover{
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+
+
+
+    
+
+@media only screen and (max-width: 1050px) {
+    .modal-content {
+        width: 100%;
+      }
+    
     
     #pg-heading{
-        margin-top:50px;
+        margin-top:30px;
         font-family: 'Press Start 2P', cursive;
-        height:200px;
-        text-align:center;
-        /*font-family: 'Big Shoulders Stencil Display', cursive;*/
-        font-size:30px;
-        color:white;
-        display:flex;
-        justify-content: center;
+        font-size:13px;
+        align-items: center;
     
     }
+
     #logo{
-         display:none;
+        background:url(/assets/images/pixeldice_100x100.png) center center no-repeat;
+        height:110px;
+        width:110px;
          
-         
-    
     }
     
     #logo1{
-       display:none;
-    
+        background:url(/assets/images/pixeldice_100x100.png) center center no-repeat;
+        height:110px;
+        width:110px;
+         
+    }
+
+    #reset-btn{
+        margin-top:50px;
     }
     
+    #reset-btn-1{
+        display:none;
+    }
+
+    #reset-btn-2{
+        display:block;
+    }
     
     #image-container{
         
@@ -306,24 +376,71 @@ body{
     
     #start-btn{
         
-        /*height:50px;
-        width:100px;*/
+        height:50px;
+        width:100px;
         position: absolute;
         
         bottom: 150px;
         left: 10%;
         
     }
-    
-    #rules-btn{
-        
-       /* max-height:150px;
-        max-width:300px;*/
-        position: absolute;
-        /*width: 100px;*/
-        bottom: 150px;
-        right: 10%;
-        
-    
+  
+    #quiz-container{
+        /*background:url(/assets/images/pixelframe750x750.png) center center no-repeat;*/
+        height:700px;
+        margin-top:50px;
+       
     }
-  }
+
+    #start-quiz{
+        font-size:20px;
+    }
+    
+     #quiz {
+        height: 350px;
+        width: 700px;
+    }
+    }  
+  
+    @media only screen and (max-width: 1000px) {
+    
+    
+        #logo{
+            background:url(/assets/images/pixeldice50x50.png) center center no-repeat;
+            width:60px;
+            height:60px;
+             
+        }
+        
+        #logo1{
+            background:url(/assets/images/pixeldice50x50.png) center center no-repeat;
+            width:60px;
+            height:60px;
+        }
+    
+        #quiz-container{
+            
+            background:url(/assets/images/image_1_480x700.png) center center no-repeat;
+            height:700px;
+            margin-top:50px;
+               
+            
+        }
+    
+    
+         #quiz{
+             font-size:10px;
+             width:80%;
+         }
+    
+         .btn{
+             font-size:10px;
+             
+         }
+    
+         #pg-heading{
+            margin-top:30px;
+            
+            font-size:10px;
+         }
+    }
