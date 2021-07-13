@@ -1,59 +1,67 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Quiz-E Retro Gaming Quiz
 
-Welcome MDegg,
+## Contents
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+* Introduction
+* The Website Design Purpose
+* User Story
+* Media Queries
+* Testing
+* Deployment
+* Acknowledgements
 
-## Gitpod Reminders
+#
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+# Introduction
 
-`python3 -m http.server`
+This website was created as the first part of my second Portfolio Project for a Diploma in software development currently undertaken with The Code Institute.
+The purpose of the website is to demonstrate my learning and understanding of Javascript.
 
-A blue button should appear to click: _Make Public_,
+# The Website Design Purpose
 
-Another blue button should appear to click: _Open Browser_.
+The website has been designed with a retro style look to give a sense of nostalgia to the user. The idea of the quiz is to test the user's knowledge of some of the old time favourite games that were played on the 8Bit computer systems such as the Sinclair Spectrum or Commodore 64. There are a few more modern questions added too to keep up with the times and test whether or not the user is a true gamer.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+# User Story
 
-A blue button should appear to click: _Make Public_,
+As a user I want to be able to use the quiz to test my knowledge of the retro video games that I played on when I was younger. First I am welcomed with an  8 bit pixelated image in the center of the screen along with pixelated logos and retro style font. I am able to click onto the rules button to be offered a pop up style modal message explaining how to navigate through the website along with the purpose of the game and how to play it. After clicking "New Game" I am forwarded to the quiz where I am welcomed with ann old school style retro computer screen border which replicates the monitors of the old computer sytem video games. After clicking start the questions appear, giving me multiple answer questions with the ability to click the answer that I think is correct. Where the correct answer is selected the chosen answer changes color to green and the wrong answers red. Where if I choose a wrong answer I am offered a red colour along with the other wrong answers and the right answer changes to green. This gives me the chance to recognise the correct answer for when I try the quiz again if I don't anser all questions right at the end.  
+At the end of the quiz I am able to submit my answers to the computer to then be able to see how many questions that I have answered correct. I am offered a large reset button which resets the game to allow me to try again. 
 
-Another blue button should appear to click: _Open Browser_.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+# Testing
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Testing Javascript
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
+I first tested to ensure that my script was linked into the HTML file correctly by adding an eventListener with a message to the console after a div was clicked. I then used dev tools to look at the console to see if the message had appeared. Once I knew that the JS file was linked I was able to start the code for the quiz.
 
-## Updates Since The Instructional Video
+Throughout the process of writing the code for Javascript quiz I tested each function as I wrote them. Where there was an opportunity to add eventListeners I would again use console.log to show a message within the console before adding the required additional functions. 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+Where functions wern't working as expected or at all for that matter I would look into the dev tools again to see the message displayed which would point out issues within the code. This sometimes may have been something simple such as missing brackets or curly braces etc. Sometimes a function would be dsplayed but not called for. These messages allowed me to find the issues quickly and amend to suit.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## Testing CSS 
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+To test that the stylesheet was correctly linked I first added a color to the body of the HTML. By checking that the body had changed colour I knew that the stylesheet was correctly linked.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+The CSS was generally tested by using the dev tools and changing the styling using the screen as a preview. Once I was happy with the styling I would copy and paste over to the CSS file.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## Media Queries
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+The page has been designed to be responsive dependant on the screen size that the user chooses.  
+I used the dev tools within Google Chrome to test how the media query will work.  
+Using Ipad and Iphone as base screen sizes I was able to change the design of the page to suit.  
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+I changed mainly image sizes and font sizes to accomodate the smaller screens. Due to the design of the pages this was quite a simple process.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+# Deployment
 
----
+To deploy this project I used Github and gitpod. I first created a repository using the Github terminal. I then cloned the repoository to a folder of which I wanted to store the project. I then added the index.html file. After completing the code I created a CSS file to enable me to style the project. I then added, comitted and pushed all changes to the staging area.
+I then deployed to Github by going to settings, pages, select root and saved the file. The project was then branched to github for viewing.
 
-Happy coding!
+## Acknowledgements
+
+Images courtesy of cleanPNG
+Images resized using ImgResizer
+Code validation courtesy of W3C.  
+Code formatting courtesy of webformatter.com. 
