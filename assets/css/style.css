@@ -12,17 +12,31 @@ body {
 	
 }
 
-#nav-item {
+.nav-item {
 	font-family: 'Press Start 2P', cursive, sans-serif;
 	display: inline;
 	font-size:25px;
 	margin:15px;	
 }
 
-#nav-item a {
+.nav-item a {
 	color:white;
 	text-decoration: none;
 	margin-right:20px;
+}
+
+#footer{
+	color:white;
+	font-size: 25px;
+	text-align: center;
+	padding:50px;
+}
+
+#footer a{
+	color:blueviolet;
+	font-size: 55px;
+	display:inline-table;
+	text-align: center;
 }
 
 #text-header{
@@ -440,7 +454,7 @@ body {
 
 
 @media only screen and (max-width: 600px) {
-	#nav-item {
+	.nav-item {
 		font-size:15px;
 		text-align: center;
 		margin:auto;

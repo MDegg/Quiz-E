@@ -104,6 +104,7 @@ let quizResults = document.getElementById('form-result')
 let countRightAnswers = 0;
 let questionResult = document.getElementById('answer-counter')
 let answerButtons = document.getElementById('answer-btn')
+
 startButton.addEventListener('click', buildQuiz); /*click to start quiz*/
 nextButton.addEventListener('click', showNextQuestion);
 function buildQuiz(){
