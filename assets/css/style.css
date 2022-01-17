@@ -25,6 +25,10 @@ body {
 	margin-right:20px;
 }
 
+.nav-item a:hover{
+	color:rgb(229, 206, 250);
+}
+
 #footer{
 	color:white;
 	font-size: 25px;
@@ -38,6 +42,11 @@ body {
 	display:inline-table;
 	text-align: center;
 }
+
+#footer a:hover{
+	color:rgb(229, 206, 250);
+}
+
 
 #text-header{
 	font-family: 'Press Start 2P', cursive, sans-serif;
@@ -535,6 +544,15 @@ body {
 		font-size: 15px;
 		width:85%;
 	}
+
+	#footer{
+		font-size: 10px;
+	}
+	
+	#footer a{
+		font-size: 25px;
+	}
+
 }
 
 
