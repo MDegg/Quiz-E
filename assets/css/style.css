@@ -29,7 +29,7 @@ body {
 	font-family: 'Press Start 2P', cursive, sans-serif;
 	font-size: 35px;
 	display:block;
-	margin-top:40px;
+	margin-top:50px;
 	text-align: center;
 }
 
@@ -398,6 +398,15 @@ body {
 		height: 350px;
 		width: 700px;
 	}
+
+	#text-header{
+		font-size: 20px;
+	}
+	
+	#text{
+		font-size: 15px;
+		width:85%;
+	}
 }
 
 #modal {
@@ -427,6 +436,8 @@ body {
 #modal-text {
 	font-size: 20px;
 }
+
+
 
 @media only screen and (max-width: 600px) {
 	#nav-item {
@@ -501,7 +512,15 @@ body {
 	#image-container {
 		height: 600px;
 	}
+
+	#text-header{
+		font-size: 20px;
+	}
 	
+	#text{
+		font-size: 15px;
+		width:85%;
+	}
 }
 
 
