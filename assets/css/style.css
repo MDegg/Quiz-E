@@ -4,6 +4,42 @@ body {
 	font-family: 'Press Start 2P', cursive, sans-serif;
 }
 
+#navbar {
+	background-color: blueviolet;
+	position: absolute;
+	top: 0;
+	width:100%;
+	
+}
+
+#nav-item {
+	font-family: 'Press Start 2P', cursive, sans-serif;
+	display: inline;
+	font-size:30px;
+	margin:15px;	
+}
+
+#nav-item a {
+	color:white;
+	text-decoration: none;
+}
+
+#text-header{
+	font-family: 'Press Start 2P', cursive, sans-serif;
+	font-size: 35px;
+	display:block;
+	margin-top:40px;
+	text-align: center;
+}
+
+#text{
+	width:60%;
+	display:block;
+	margin:auto;
+	padding:20px;
+	font-size: 25px;
+}
+
 #pg-heading {
 	margin-top: 50px;
 	font-family: 'Press Start 2P', cursive, sans-serif;
@@ -392,6 +428,12 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+	#nav-item {
+		font-size:15px;
+		text-align: center;
+		margin:auto;
+	}
+
 	#logo {
 		background: url(/assets/images/pixeldice50x50.png) center center no-repeat;
 		height: 60px;
@@ -460,3 +502,5 @@ body {
 	}
 	
 }
+
+
