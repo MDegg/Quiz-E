@@ -2,6 +2,7 @@ body {
 	background-color: black;
 	color: white;
 	font-family: 'Press Start 2P', cursive, sans-serif;
+	margin:0;
 }
 
 #navbar {
@@ -471,6 +472,10 @@ body {
 
 	#quiz{
 		width:65%;
+	}
+
+	#pg-heading {
+		margin-top: 18px;
 	}
 }
 
