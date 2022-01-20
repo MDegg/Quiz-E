@@ -460,7 +460,19 @@ body {
 	font-size: 20px;
 }
 
+@media only screen and (max-width: 780px) {
+	#quiz-container{
+		background: url(../images/pixelframe750x750.png) center center no-repeat;
+	}
 
+	#reset-btn{
+		margin-top:0;
+	}	
+
+	#quiz{
+		width:65%;
+	}
+}
 
 @media only screen and (max-width: 600px) {
 	.nav-item {

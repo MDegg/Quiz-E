@@ -169,7 +169,7 @@ function checkForGameOver() {
     nextButton.classList.remove('hide')
   } else {
     submitButton.classList.remove('hide');
-    //answerButtons.classList.add('hide');
+    answerButtons.classList.add('hide');
     questionElement.classList.add('hide');
   }
 }
