@@ -21,6 +21,13 @@ The purpose of the website is to demonstrate my learning and understanding of Ja
 
 The website has been designed with a retro style look to give a sense of nostalgia to the user. The idea of the quiz is to test the user's knowledge of some of the old time favourite games that were played on the 8Bit computer systems such as the Sinclair Spectrum or Commodore 64. There are a few more modern questions added too to keep up with the times and test whether or not the user is a true gamer.
 
+The website has been designed to enable the user to easily navigate through the pages by using the links within the navbar. The links change dependant on where the user is within the web app. For example there is an option to view the about page when playing the game.
+
+- Homepage Navbar
+![](assets/images/navbar.JPG)
+- In Game Navbar
+![](assets/images/nabar-ingame.JPG)
+
 # User Story
 
 As a user I want to be able to use the quiz to test my knowledge of the retro video games that I played on when I was younger. First I am welcomed with an  8 bit pixelated image in the center of the screen along with pixelated logos and retro style font. I am able to click onto the rules button to be offered a pop up style modal message explaining how to navigate through the website along with the purpose of the game and how to play it. After clicking "New Game" I am forwarded to the quiz where I am welcomed with ann old school style retro computer screen border which replicates the monitors of the old computer sytem video games. After clicking start the questions appear, giving me multiple answer questions with the ability to click the answer that I think is correct. Where the correct answer is selected the chosen answer changes color to green and the wrong answers red. Where if I choose a wrong answer I am offered a red colour along with the other wrong answers and the right answer changes to green. This gives me the chance to recognise the correct answer for when I try the quiz again if I don't anser all questions right at the end.  
