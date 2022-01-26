@@ -1,5 +1,7 @@
 # Quiz-E Retro Gaming Quiz
 
+![](assets/images/homescreen.JPG)
+
 ## Contents
 
 * Introduction
@@ -7,6 +9,8 @@
 * User Story
 * Media Queries
 * Testing
+* Validation
+* Bugs
 * Deployment
 * Acknowledgements
 
@@ -16,6 +20,7 @@
 
 This website was created as the first part of my second Portfolio Project for a Diploma in software development currently undertaken with The Code Institute.
 The purpose of the website is to demonstrate my learning and understanding of Javascript.
+
 
 # The Website Design Purpose
 
